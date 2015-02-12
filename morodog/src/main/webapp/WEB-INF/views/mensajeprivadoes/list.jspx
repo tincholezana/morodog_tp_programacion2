@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/jquery/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/jquery/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_ar_edu_um_programacion2_morodog_domain_MensajePrivado" items="${mensajeprivadoes}" z="yTwB7c3q6iEgk7QUCPepPAywWqA=">
+        <table:table data="${mensajeprivadoes}" id="l_ar_edu_um_programacion2_morodog_domain_MensajePrivado" path="/mensajeprivadoes" z="B624nsUhLYEwqL1IJJzUpIAWK+s=">
+            <table:column id="c_ar_edu_um_programacion2_morodog_domain_MensajePrivado_texto" property="texto" z="AL8sjGRaYQ4R5Vi6zlNd72W7CtE="/>
+            <table:column date="true" dateTimePattern="${mensajePrivado_fecha_date_format}" id="c_ar_edu_um_programacion2_morodog_domain_MensajePrivado_fecha" property="fecha" z="yCs4Aq/v9ebgPSyabi87ITZ696A="/>
+            <table:column id="c_ar_edu_um_programacion2_morodog_domain_MensajePrivado_idUsuarioReceptor" property="idUsuarioReceptor" z="Mox3sZzPJddYS+ZsBepUu5rBm7Q="/>
+            <table:column id="c_ar_edu_um_programacion2_morodog_domain_MensajePrivado_idUsuarioEmisor" property="idUsuarioEmisor" z="jaSSooRWr890cvFPrZZPh3gCM10="/>
+            <table:column id="c_ar_edu_um_programacion2_morodog_domain_MensajePrivado_enviado" property="enviado" z="TAzZhW5w/B+ykP+OpQcID/G31e8="/>
+        </table:table>
+    </page:list>
+</div>

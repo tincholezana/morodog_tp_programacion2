@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/jquery/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/jquery/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ar_edu_um_programacion2_morodog_domain_Publicacion" object="${publicacion}" path="/publicacions" z="5nDoqyQ1AXYk/wjqv9QwJvIMXwY=">
+        <field:display field="texto" id="s_ar_edu_um_programacion2_morodog_domain_Publicacion_texto" object="${publicacion}" z="0591xW5XYgCOlXNjaLgASzUYi/M="/>
+        <field:display date="true" dateTimePattern="${publicacion_fecha_date_format}" field="fecha" id="s_ar_edu_um_programacion2_morodog_domain_Publicacion_fecha" object="${publicacion}" z="MgYBFjFUXi4b+9ERD+XsAdL0j8g="/>
+        <field:display field="usuario" id="s_ar_edu_um_programacion2_morodog_domain_Publicacion_usuario" object="${publicacion}" z="Zuq/6VikbxtONGzVZRLttWCEOmQ="/>
+        <field:display field="link" id="s_ar_edu_um_programacion2_morodog_domain_Publicacion_link" object="${publicacion}" z="4Xd3usuclfQpvPFi7SNHXIAcxtw="/>
+        <field:display field="tendencia" id="s_ar_edu_um_programacion2_morodog_domain_Publicacion_tendencia" object="${publicacion}" z="O8i6fnYoGBJfX3L1+irmSu13BUc="/>
+        <field:display field="links" id="s_ar_edu_um_programacion2_morodog_domain_Publicacion_links" object="${publicacion}" z="p10jqb/87S1KDcoHPCKkPu6o6vc="/>
+        <field:display field="tendencias" id="s_ar_edu_um_programacion2_morodog_domain_Publicacion_tendencias" object="${publicacion}" z="YMnPbhXBKvetQsc+mzzBGsIc8Ag="/>
+    </page:show>
+</div>

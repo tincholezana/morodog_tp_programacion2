@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="usuarios/list">
+        <put-attribute name="body" value="/WEB-INF/views/usuarios/list.jspx"/>
+    </definition>
+<definition extends="default" name="usuarios/show">
+        <put-attribute name="body" value="/WEB-INF/views/usuarios/show.jspx"/>
+    </definition>
+<definition extends="default" name="usuarios/create">
+        <put-attribute name="body" value="/WEB-INF/views/usuarios/create.jspx"/>
+    </definition>
+<definition extends="default" name="usuarios/update">
+        <put-attribute name="body" value="/WEB-INF/views/usuarios/update.jspx"/>
+    </definition>
+<definition extends="default" name="usuarios/findUsuariosByActivoNot">
+        <put-attribute name="body" value="/WEB-INF/views/usuarios/findUsuariosByActivoNot.jspx"/>
+    </definition>
+<definition extends="default" name="usuarios/findUsuariosByApellidoLike">
+        <put-attribute name="body" value="/WEB-INF/views/usuarios/findUsuariosByApellidoLike.jspx"/>
+    </definition>
+<definition extends="default" name="usuarios/findUsuariosByEMailLike">
+        <put-attribute name="body" value="/WEB-INF/views/usuarios/findUsuariosByEMailLike.jspx"/>
+    </definition>
+<definition extends="default" name="usuarios/findUsuariosByNombreUsuarioEquals">
+        <put-attribute name="body" value="/WEB-INF/views/usuarios/findUsuariosByNombreUsuarioEquals.jspx"/>
+    </definition>
+<definition extends="default" name="usuarios/findUsuariosByPasswordEquals">
+        <put-attribute name="body" value="/WEB-INF/views/usuarios/findUsuariosByPasswordEquals.jspx"/>
+    </definition>
+</tiles-definitions>

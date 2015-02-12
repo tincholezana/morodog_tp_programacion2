@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/jquery/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/jquery/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_ar_edu_um_programacion2_morodog_domain_Usuario" modelAttribute="usuario" path="/usuarios" render="${empty dependencies}" z="kl5pPnRMtFSUsMj0lJR/VzIXlok=">
+        <field:textarea field="nombre" id="c_ar_edu_um_programacion2_morodog_domain_Usuario_nombre" required="true" z="/cpIv2Gkiwh5G0akdlIlYy8vwQ0="/>
+        <field:textarea field="apellido" id="c_ar_edu_um_programacion2_morodog_domain_Usuario_apellido" required="true" z="Py6c2n3D8bDhvSLJyCOvB9/bloA="/>
+        <field:textarea field="password" id="c_ar_edu_um_programacion2_morodog_domain_Usuario_password" required="true" z="oDxPdXg1Jfh1H0rzhEn6ICFbUFo="/>
+        <field:textarea field="eMail" id="c_ar_edu_um_programacion2_morodog_domain_Usuario_eMail" required="true" z="2PStx3KsBxWV8ui0X9wlPVcMhl8="/>
+        <field:input field="nombreUsuario" id="c_ar_edu_um_programacion2_morodog_domain_Usuario_nombreUsuario" max="20" required="true" z="mQK7R23eAkyv8CTM+tVfxbt8l2w="/>
+        <field:checkbox field="activo" id="c_ar_edu_um_programacion2_morodog_domain_Usuario_activo" z="eEVaCpO2toeYIHoTWsTKIzu8v3U="/>
+        <field:select field="sexo" id="c_ar_edu_um_programacion2_morodog_domain_Usuario_sexo" items="${sexoes}" path="sexoes" required="true" z="+eFf+rz+B9Ie7pUgg7H2T1YZKZM="/>
+        <field:datetime dateTimePattern="${usuario_fecha_date_format}" field="fecha" id="c_ar_edu_um_programacion2_morodog_domain_Usuario_fecha" required="true" z="xGHTbd6qBnebY6kdWygxTWWiR34="/>
+        <field:simple field="publicacion" id="c_ar_edu_um_programacion2_morodog_domain_Usuario_publicacion" messageCode="entity_reference_not_managed" messageCodeAttribute="Publicacion" z="U7wvRJi6ulJqFb2/SO+VbOqd1nc="/>
+        <field:simple field="mensajePrivado" id="c_ar_edu_um_programacion2_morodog_domain_Usuario_mensajePrivado" messageCode="entity_reference_not_managed" messageCodeAttribute="Mensaje Privado" z="ZCARAZvDSxLCeYSdVVu0PUJhmjU="/>
+        <field:simple field="vinculo" id="c_ar_edu_um_programacion2_morodog_domain_Usuario_vinculo" messageCode="entity_reference_not_managed" messageCodeAttribute="Vinculo" z="YuP0wR7q4hTTf3TLzy1quVMYSpQ="/>
+        <field:simple field="republucacion" id="c_ar_edu_um_programacion2_morodog_domain_Usuario_republucacion" messageCode="entity_reference_not_managed" messageCodeAttribute="Re Publicacion" z="eaMwVKTAQy9Pvq0v3OMA/3EXHyw="/>
+        <field:select field="usuario" id="c_ar_edu_um_programacion2_morodog_domain_Usuario_usuario" itemValue="id" items="${users}" path="/users" z="5mIEdspCpR05j+pCtQ1qV2ygd1Q="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_ar_edu_um_programacion2_morodog_domain_Usuario" render="${not empty dependencies}" z="HsxS5mrT8N0TNKkWy+3MNsTYOc8="/>
+</div>

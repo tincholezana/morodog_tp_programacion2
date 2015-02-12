@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/jquery/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/jquery/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_ar_edu_um_programacion2_morodog_domain_RePublicacion" modelAttribute="rePublicacion" path="/republicacions" versionField="Version" z="4IzFZzbUKXpQr35yLCzQmPuvkMM=">
+        <field:datetime dateTimePattern="${rePublicacion_fecha_date_format}" field="fecha" id="c_ar_edu_um_programacion2_morodog_domain_RePublicacion_fecha" required="true" z="+rGQ+eDqCxMWJKWeLQM6X3ij0GA="/>
+        <field:select field="idUsuario" id="c_ar_edu_um_programacion2_morodog_domain_RePublicacion_idUsuario" itemValue="id" items="${usuarios}" path="/usuarios" required="true" z="fpocB1ZEq7gYP+YTEbTHETHSoL8="/>
+        <field:select field="publicacion" id="c_ar_edu_um_programacion2_morodog_domain_RePublicacion_publicacion" itemValue="id" items="${publicacions}" path="/publicacions" required="true" z="6qgqDZ1p8JyUhfX5ExWgDJRq6Y4="/>
+    </form:update>
+</div>

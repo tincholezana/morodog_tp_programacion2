@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/jquery/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/jquery/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ar_edu_um_programacion2_morodog_domain_Role" object="${role}" path="/roles" z="TP6gQAq47hgFO52ekWBxnpiaLDM=">
+        <field:display field="roleName" id="s_ar_edu_um_programacion2_morodog_domain_Role_roleName" object="${role}" z="cc8nkKVoufNH9Ndi1Ji7GhOrzFs="/>
+        <field:display field="roleDescription" id="s_ar_edu_um_programacion2_morodog_domain_Role_roleDescription" object="${role}" z="7WQowHed37UNHPTQjxunBULlRI4="/>
+    </page:show>
+</div>

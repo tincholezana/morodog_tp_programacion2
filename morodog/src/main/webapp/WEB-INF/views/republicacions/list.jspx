@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/jquery/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/jquery/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_ar_edu_um_programacion2_morodog_domain_RePublicacion" items="${republicacions}" z="YZW3QeQI0Ugz/XtaUqVAD4uIzaA=">
+        <table:table data="${republicacions}" id="l_ar_edu_um_programacion2_morodog_domain_RePublicacion" path="/republicacions" z="vovS8FUkKr9M3uR1aCfFLNddJPI=">
+            <table:column date="true" dateTimePattern="${rePublicacion_fecha_date_format}" id="c_ar_edu_um_programacion2_morodog_domain_RePublicacion_fecha" property="fecha" z="C1l4eIwr4+/0B8m37vzHv50FLCs="/>
+            <table:column id="c_ar_edu_um_programacion2_morodog_domain_RePublicacion_idUsuario" property="idUsuario" z="faJuE913eAeKhrYaLlLbceODZ8w="/>
+            <table:column id="c_ar_edu_um_programacion2_morodog_domain_RePublicacion_publicacion" property="publicacion" z="r1g3TK/tsYt5TPmWnYiV7WVjNMo="/>
+        </table:table>
+    </page:list>
+</div>

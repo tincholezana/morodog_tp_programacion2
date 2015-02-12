@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/jquery/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/jquery/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ar_edu_um_programacion2_morodog_domain_Vinculo" object="${vinculo}" path="/vinculoes" z="HxqYowO1OuM/K/E1XBmxSGDuXBA=">
+        <field:display field="relacion" id="s_ar_edu_um_programacion2_morodog_domain_Vinculo_relacion" object="${vinculo}" z="G5+P+CRmalfiTtci1cvDyxb0rgo="/>
+        <field:display field="idUsuario" id="s_ar_edu_um_programacion2_morodog_domain_Vinculo_IdUsuario" object="${vinculo}" z="bvLnU/snd2q8nXaohXsAutzkoeg="/>
+        <field:display field="idUsuarioRelacion" id="s_ar_edu_um_programacion2_morodog_domain_Vinculo_idUsuarioRelacion" object="${vinculo}" z="LwhU9p8l06v8krtZPn3NscepkM0="/>
+    </page:show>
+</div>

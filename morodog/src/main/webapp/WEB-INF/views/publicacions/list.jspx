@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/jquery/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/jquery/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_ar_edu_um_programacion2_morodog_domain_Publicacion" items="${publicacions}" z="GjuTj+vqmD1PzR5qt8fPgTO+H20=">
+        <table:table data="${publicacions}" id="l_ar_edu_um_programacion2_morodog_domain_Publicacion" path="/publicacions" z="aEp+VtIxHegDI5KqXVy6OFvAyjs=">
+            <table:column id="c_ar_edu_um_programacion2_morodog_domain_Publicacion_texto" property="texto" z="mZjs5FAnGV54PoNwQQOURUysE3k="/>
+            <table:column date="true" dateTimePattern="${publicacion_fecha_date_format}" id="c_ar_edu_um_programacion2_morodog_domain_Publicacion_fecha" property="fecha" z="NZO2sPO+94405F0iLPWW3zOyXlk="/>
+            <table:column id="c_ar_edu_um_programacion2_morodog_domain_Publicacion_usuario" property="usuario" z="P9lzX07GQ5MBMl1Wei6N7Cp5Wok="/>
+            <table:column id="c_ar_edu_um_programacion2_morodog_domain_Publicacion_link" property="link" z="U+4o0WtgD0jYW91ysaUZepYgty0="/>
+            <table:column id="c_ar_edu_um_programacion2_morodog_domain_Publicacion_tendencia" property="tendencia" z="HcDd3y88iiASCmuTB4q0IQs0GxQ="/>
+        </table:table>
+    </page:list>
+</div>

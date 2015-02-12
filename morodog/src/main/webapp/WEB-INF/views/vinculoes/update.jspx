@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/jquery/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/jquery/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_ar_edu_um_programacion2_morodog_domain_Vinculo" modelAttribute="vinculo" path="/vinculoes" versionField="Version" z="CdxX4jIYHn1pF49vGxnfmcDU7Tw=">
+        <field:select field="relacion" id="c_ar_edu_um_programacion2_morodog_domain_Vinculo_relacion" items="${relacions}" path="relacions" required="true" z="qxIH5DD3GMqb5Pz0P8982J6mXvY="/>
+        <field:select field="IdUsuario" id="c_ar_edu_um_programacion2_morodog_domain_Vinculo_IdUsuario" itemValue="id" items="${usuarios}" path="/usuarios" required="true" z="80oO5tCv2iIKF5FwGGfq4gjDHD4="/>
+        <field:input decimalMin="0" field="idUsuarioRelacion" id="c_ar_edu_um_programacion2_morodog_domain_Vinculo_idUsuarioRelacion" required="true" validationMessageCode="field_invalid_integer" z="/O3KbIGJ46AkCtJzkt9zYPR5hG8="/>
+    </form:update>
+</div>

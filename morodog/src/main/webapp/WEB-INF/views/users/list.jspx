@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/jquery/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/jquery/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_ar_edu_um_programacion2_morodog_domain_User" items="${users}" z="jwr+NacK/bx9MgZAFImgfTDFuIM=">
+        <table:table data="${users}" id="l_ar_edu_um_programacion2_morodog_domain_User" path="/users" z="RjA5YrI4sbNY5W2/QYOeu6mJSWc=">
+            <table:column id="c_ar_edu_um_programacion2_morodog_domain_User_firstName" property="firstName" z="i/K3Nb1fF3h05GGzbxE52lN5HuQ="/>
+            <table:column id="c_ar_edu_um_programacion2_morodog_domain_User_lastName" property="lastName" z="Klvqu/cD8F9h2STY57rU78HGwiE="/>
+            <table:column id="c_ar_edu_um_programacion2_morodog_domain_User_emailAddress" property="emailAddress" z="qXL2g/ih8FGVlN+hN8Kbnd+COL0="/>
+            <table:column id="c_ar_edu_um_programacion2_morodog_domain_User_password" property="password" z="Fd0gJmy6PC6+B/mAOnuhpwBzxkE="/>
+            <table:column date="true" dateTimePattern="${user_activationdate_date_format}" id="c_ar_edu_um_programacion2_morodog_domain_User_activationDate" property="activationDate" z="k07+mu34EnRb6RfDlTTuoW7oUN0="/>
+            <table:column id="c_ar_edu_um_programacion2_morodog_domain_User_activationKey" property="activationKey" z="NgY7nWSeix06yGK92w0sQnIEHew="/>
+        </table:table>
+    </page:list>
+</div>

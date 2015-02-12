@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/jquery/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/jquery/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ar_edu_um_programacion2_morodog_domain_MensajePrivado" object="${mensajeprivado}" path="/mensajeprivadoes" z="U75ehDiJm15XrgJ+1TopN4ztqIo=">
+        <field:display field="texto" id="s_ar_edu_um_programacion2_morodog_domain_MensajePrivado_texto" object="${mensajeprivado}" z="MoZGw7dBwhA+V2Aka00mQL/HfU0="/>
+        <field:display date="true" dateTimePattern="${mensajePrivado_fecha_date_format}" field="fecha" id="s_ar_edu_um_programacion2_morodog_domain_MensajePrivado_fecha" object="${mensajeprivado}" z="R3C+cmAIp5XIhc7FSS116ekA6sc="/>
+        <field:display field="idUsuarioReceptor" id="s_ar_edu_um_programacion2_morodog_domain_MensajePrivado_idUsuarioReceptor" object="${mensajeprivado}" z="7ZKnK2rbqDS0p0jKl+lD+bPNdzw="/>
+        <field:display field="idUsuarioEmisor" id="s_ar_edu_um_programacion2_morodog_domain_MensajePrivado_idUsuarioEmisor" object="${mensajeprivado}" z="oKJQ9QzGmHafaFCZpDG6GTysYhY="/>
+        <field:display field="enviado" id="s_ar_edu_um_programacion2_morodog_domain_MensajePrivado_enviado" object="${mensajeprivado}" z="IHtqhZpSApfk+jx0PL4KzZN8qKA="/>
+    </page:show>
+</div>

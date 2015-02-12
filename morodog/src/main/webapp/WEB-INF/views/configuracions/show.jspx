@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/jquery/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/jquery/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ar_edu_um_programacion2_morodog_domain_Configuracion" object="${configuracion}" path="/configuracions" z="T3JB5zOK+2L2LA/CMg42wYLQpCc=">
+        <field:display field="NDiasEmail" id="s_ar_edu_um_programacion2_morodog_domain_Configuracion_nDiasEmail" object="${configuracion}" z="zKPyJXaj75ZGqDlgQeVgh6bK9nE="/>
+        <field:display field="NDiasTendencia" id="s_ar_edu_um_programacion2_morodog_domain_Configuracion_nDiasTendencia" object="${configuracion}" z="Q4C977maBSo8ZF2yW3J72XP19yw="/>
+    </page:show>
+</div>

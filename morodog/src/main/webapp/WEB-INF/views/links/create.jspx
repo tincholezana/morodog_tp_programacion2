@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/jquery/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/jquery/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_ar_edu_um_programacion2_morodog_domain_Link" modelAttribute="link" path="/links" render="${empty dependencies}" z="tqUixLvLiMlGpW1mCJwMFitER80=">
+        <field:textarea field="nombre" id="c_ar_edu_um_programacion2_morodog_domain_Link_nombre" required="true" z="m/BaYXT/Faad+7cesAFW7r9mdgQ="/>
+        <field:input field="url" id="c_ar_edu_um_programacion2_morodog_domain_Link_url" required="true" z="pvz+po0aGG7ThkYhx5yy82hejfE="/>
+        <field:select field="publicacion" id="c_ar_edu_um_programacion2_morodog_domain_Link_publicacion" itemValue="id" items="${publicacions}" multiple="true" path="/publicacions" z="9mP0uTNuIydOVRkViWBkmnUGuFg="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_ar_edu_um_programacion2_morodog_domain_Link" render="${not empty dependencies}" z="sOJpR/4I1XqHZlj1uL+5NfpPgRY="/>
+</div>

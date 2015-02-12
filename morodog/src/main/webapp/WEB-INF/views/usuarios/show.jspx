@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/jquery/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/jquery/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ar_edu_um_programacion2_morodog_domain_Usuario" object="${usuario}" path="/usuarios" z="eUewaXx3QI0GYBBdDwMdbDTJeRw=">
+        <field:display field="nombre" id="s_ar_edu_um_programacion2_morodog_domain_Usuario_nombre" object="${usuario}" z="PIkXKelAM4jAh8LgtdVbYvNDOkY="/>
+        <field:display field="apellido" id="s_ar_edu_um_programacion2_morodog_domain_Usuario_apellido" object="${usuario}" z="CaBnFbBHVVDFvM6E8uxWcSLSlXk="/>
+        <field:display field="password" id="s_ar_edu_um_programacion2_morodog_domain_Usuario_password" object="${usuario}" z="WPZ69xWLnvW85dN3bfg0y3s9stc="/>
+        <field:display field="EMail" id="s_ar_edu_um_programacion2_morodog_domain_Usuario_eMail" object="${usuario}" z="2DA6b5CmyrwuUEmGfmTBawUL6e4="/>
+        <field:display field="nombreUsuario" id="s_ar_edu_um_programacion2_morodog_domain_Usuario_nombreUsuario" object="${usuario}" z="mO8H5cLMxlKZupsdL0EPRHyhKIo="/>
+        <field:display field="activo" id="s_ar_edu_um_programacion2_morodog_domain_Usuario_activo" object="${usuario}" z="iWjdBwLHYHydvinHmx7kkVanvCk="/>
+        <field:display field="sexo" id="s_ar_edu_um_programacion2_morodog_domain_Usuario_sexo" object="${usuario}" z="vKVUUvi6ZDarD+lepg2oNWLuyiE="/>
+        <field:display date="true" dateTimePattern="${usuario_fecha_date_format}" field="fecha" id="s_ar_edu_um_programacion2_morodog_domain_Usuario_fecha" object="${usuario}" z="cLS8pVjPk7+O+z7chOlYxlfLv6g="/>
+        <field:display field="usuario" id="s_ar_edu_um_programacion2_morodog_domain_Usuario_usuario" object="${usuario}" z="rhOREzxPaFeaDUnTB9Z1ZgVzEDY="/>
+    </page:show>
+</div>

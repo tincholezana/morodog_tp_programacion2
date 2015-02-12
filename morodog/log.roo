@@ -1,0 +1,255 @@
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2015-02-06 19:57:22
+project --topLevelPackage ar.edu.um.programacion2.morodog --projectName morodog --java 7 --packaging WAR
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2015-02-06 19:57:41
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2015-02-06 19:57:49
+jpa setup --provider HIBERNATE --database MYSQL --jndiDataSource java:jboss/datasources/morito
+entity jpa --class ~.domain.Configuracion --testAutomatically true
+field number --fieldName nDiasEmail --type int
+field number --fieldName nDiasTendencia --type int
+web mvc setup
+web mvc all --package ~.web
+entity jpa --class ~.domain.MensajePrivado --testAutomatically true
+field string --fieldName texto --notNull --sizeMax 140
+field date --fieldName fecha --type java.util.Date --notNull 
+field string --fieldName estado --notNull 
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2015-02-06 20:31:48
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2015-02-07 00:24:32
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2015-02-07 00:46:38
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2015-02-07 00:46:59
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2015-02-07 00:59:59
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2015-02-07 01:03:46
+field number --fieldName idUsuarioReceptor --type java.lang.Integer --class ~.domain.MensajePrivado --notNull --min 0
+// [failed] field reference --fieldName idUsuarioEmisor --type ~.domain.Usuario --cardinality MANY_TO_ONE
+entity jpa --class ~.domain.Usuario --testAutomatically true
+field reference --fieldName idUsuarioEmisor --type ~.domain.Usuario --cardinality MANY_TO_ONE
+focu --class ~.domain.MensajePrivado
+// [failed] field reference --fieldName idUsuarioEmisor --type ~.domain.Usuario --cardinality MANY_TO_ONE
+entity jpa --class ~.domain.Usuario --testAutomatically true
+focu --class ~.domain.MensajePrivado
+field reference --fieldName idUsuarioEmisor --type ~.domain.Usuario --cardinality MANY_TO_ONE
+focus --class ~.domain.Usuario
+field string --fieldName nombre --notNull --sizeMax 40
+field string --fieldName apellido --notNull --sizeMax 40
+field string --fieldName eMail --notNull --sizeMax 250
+field string --fieldName nombreUsuario --notNull --sizeMax 20
+field string --fieldName password --notNull --sizeMax 45
+// [failed] field string --fieldName eMail --notNull --sizeMax 250 --unique
+field string --fieldName eMail --notNull --sizeMax 250 --unique
+field string --fieldName nombreUsuario --notNull --sizeMax 20 --unique 
+field boolean --fieldName activo --notNull  
+focus --class ~.domain.MensajePrivado
+field boolean --fieldName enviado --notNull  
+enum type --class ~.domain.Sexo
+enum constant --name masculino
+enum constant --name femenino
+focus --class ~.domain.Usuario
+field enum --fieldName sexo --type ~.domain.Sexo --notNull 
+field date --fieldName fecha --type java.util.Date --notNull 
+web mvc all --package ~.web
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2015-02-07 02:58:03
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2015-02-10 14:55:44
+entity jpa --class ~.domain.Publicacion --testAutomatically true
+entity jpa --class ~.domain.Vinculo --testAutomatically true
+enum type --class ~.domain.Relacion
+enum constant --name teSigo
+enum constant --name meSigue
+focus --class ~.domain.Vinculo
+field enum --fieldName relacion --type ~.domain.Relacion --notNull 
+field number --fieldName idUsuarioRelacion --type java.lang.Long --notNull --decimalMin 0
+entity jpa --class ~.domain.RePublicacion --testAutomatically true
+field date --fieldName fecha --type java.util.Date --notNull 
+field reference --fieldName idUsuario --type ~.domain.Usuario --notNull --cardinality MANY_TO_ONE 
+field reference --fieldName publicacion --type ~.domain.Publicacion --notNull --cardinality MANY_TO_ONE 
+focus --class ~.domain.Publicacion
+field string --fieldName texto --sizeMax 140 --notNull 
+field date --fieldName fecha --type java.util.Date --notNull 
+entity jpa --class ~.domain.Link --testAutomatically true
+field string --fieldName nombre --sizeMax 50 --notNull --unique 
+field string --fieldName url --notNull 
+entity jpa --class ~.domain.Tendencia --testAutomatically true
+field string --fieldName nombre --sizeMax 50 --notNull 
+web mvc all --package ~.web
+focus --class ~.domain.Usuario
+// [failed] finder list
+focus --class ~.domain.Tendencia
+finder list
+focus --class ~.domain.Usuario
+finder list
+// [failed] focus --class ~.domain.Usuario
+field set --fieldName publicacion --type ~.domain.Publicacion --cardinality ONE_TO_MANY --mappedBy usuario
+field set --fieldName mensajePrivado --type ~.domain.MensajePrivado --cardinality ONE_TO_MANY --mappedBy usuario
+web mvc all --package ~.web
+focus --class ~.domain.Usuario
+field set --fieldName vinculo --type ~.domain.Vinculo --cardinality ONE_TO_MANY --mappedBy usuario
+focus --class ~.domain.Vinculo
+field reference --fieldName usuario --type ~.domain.Usuario --notNull --cardinality MANY_TO_ONE 
+focus --class ~.domain.Usuario
+field set --fieldName republucacion --type ~.domain.RePublicacion --cardinality ONE_TO_MANY --mappedBy usuario
+focus --class ~.domain.Publicacion
+focus --class ~.domain.Publicacion
+field reference --fieldName usuario --type ~.domain.Usuario
+focus --class ~.domain.Publicacion
+field reference --fieldName usuario --type ~.domain.Usuario --notNull --cardinality MANY_TO_ONE 
+field set --fieldName rePublicacion --type ~.domain.RePublicacion --cardinality ONE_TO_MANY --mappedBy  publicacion
+focus --class ~.domain.RePublicacion
+// [failed] field reference --fieldName publicacion --type ~.domain.Publicacion --notNull --cardinality MANY_TO_ONE 
+// [failed] field reference --fieldName publicacion --type ~.domain.Publicacion --notNull --cardinality MANY_TO_ONE 
+finder list
+finder add findRePublicacionsByIdUsuario
+finder add findRePublicacionsByPublicacion
+finder add findRePublicacionsByFechaBetween
+focus --class ~.domain.Configuracion
+finder list
+finder add findConfiguracionsByNDiasEmail
+finder add findConfiguracionsByNDiasTendencia
+focus --class ~.domain.Link
+field set --fieldName publicacion --type ~.domain.Publicacion --cardinality MANY_TO_MANY --notNull 
+// [failed] field set --fieldName publicacion --type ~.domain.Publicacion --cardinality MANY_TO_MANY 
+field set --fieldName publicacion --type ~.domain.Publicacion --cardinality MANY_TO_MANY 
+focus --class ~.domain.Tendencia
+field set --fieldName publicacion --type ~.domain.Publicacion --cardinality MANY_TO_MANY 
+focus --class ~.domain.Publicacion
+field set --fieldName link --type ~.domain.Link --cardinality MANY_TO_MANY --mappedBy publicacion
+field set --fieldName tendencia --type ~.domain.Tendencia --cardinality MANY_TO_MANY --mappedBy publicacion
+focus --class ~.domain.MensajePrivado
+focus --class ~.domain.Usuario
+// [failed] field set --fieldName publicacion --type ~.domain.Publicacion --cardinality ONE_TO_MANY --mappedBy usuario
+// [failed] field set --fieldName mensajePrivado --type ~.domain.MensajePrivado --cardinality ONE_TO_MANY --mappedBy usuario
+focus --class ~.domain.MensajePrivado
+field reference --fieldName usuario --type ~.domain.Usuario --notNull --cardinality MANY_TO_ONE 
+web mvc all --package ~.web
+focus --class ~.domain.Usuario
+// [failed] field set --fieldName vinculo --type ~.domain.Vinculo --cardinality ONE_TO_MANY --mappedBy usuario
+focus --class ~.domain.Vinculo
+web mvc all --package ~.web
+focus --class ~.domain.Publicacion
+field set --fieldName links --type ~.domain.Link --cardinality MANY_TO_MANY 
+field set --fieldName tendencias --type ~.domain.Tendencia --cardinality MANY_TO_MANY 
+focus --class ~.domain.Link
+// [failed] field set --fieldName publicacion --type ~.domain.Publicacion --cardinality MANY_TO_MANY 
+focus --class ~.domain.Tendencia
+// [failed] field set --fieldName publicacion --type ~.domain.Publicacion --cardinality MANY_TO_MANY 
+focus --class ~.domain.Tendencia
+// [failed] field set --fieldName publicacion --type ~.domain.Publicacion --cardinality MANY_TO_MANY --mappedBy tendencia
+focus --class ~.domain.Link
+// [failed] field set --fieldName publicacion --type ~.domain.Publicacion --cardinality MANY_TO_MANY --mappedBy link
+web mvc all --package ~.web
+focus --class ~.domain.Usuario
+finder list
+finder add findUsuariosByActivoNot
+finder add findUsuariosByApellidoLike
+finder add findUsuariosByEMailLike
+finder add findUsuariosByPasswordEquals
+finder add findUsuariosByNombreUsuarioEquals
+focus --class ~.domain.Publicacion
+finder list
+finder add findPublicacionsByTextoLike
+finder add findPublicacionsByFechaBetween
+finder add findPublicacionsByFechaGreaterThan
+finder add findPublicacionsByFechaLessThan
+finder add findPublicacionsByUsuario
+focus --class ~.domain.MensajePrivado
+finder list
+finder add findMensajePrivadoesByIdUsuarioReceptorEquals
+finder add findMensajePrivadoesByIdUsuarioEmisor
+focus --class ~.domain.Link
+finder list
+finder add findLinksByNombreEquals
+finder add findLinksByUrlEquals
+focus --class ~.domain.Tendencia
+finder list
+finder add findTendenciasByNombreEquals
+finder add findTendenciasByPublicacion
+// [failed] focus --class ~.domain.Link
+finder list
+finder add findLinksByPublicacion
+web mvc all --package ~.web
+web mvc finder all
+web mvc language --code es
+web mvc jquery setup
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2015-02-11 04:12:03
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2015-02-11 13:44:30
+hint
+hint web mvc
+web mvc all --package ~.web
+web mvc finder all
+web mvc language --code es
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2015-02-11 14:52:04
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2015-02-11 18:28:26
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2015-02-11 18:54:14
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2015-02-11 18:55:52
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2015-02-11 19:01:53
+// Spring Roo 1.3.0.RELEASE [rev 4877cfb] log opened at 2015-02-11 19:03:36
+web mvc all --package ~.web
+web mvc finder all
+web mvc language --code es
+web mvc bootstrap setup
+entity jpa --class ~.domain.User --testAutomatically --permitReservedWords
+field string --fieldName firstName --sizeMin 1 --notNull
+field string --fieldName lastName --sizeMin 1 --notNull
+field string --fieldName emailAddress --sizeMin 1 --notNull --unique
+field string --fieldName password --sizeMin 1 --notNull
+field date --fieldName activationDate --type java.util.Date 
+field string --fieldName activationKey 
+field boolean --fieldName enabled
+field boolean --fieldName locked 
+entity jpa --class ~.domain.Role --testAutomatically --permitReservedWords
+field string --fieldName roleName --sizeMin 1 --notNull --unique
+field string --fieldName roleDescription --sizeMin --sizeMax 200 --notNull
+entity jpa --class ~.domain.UserRole --testAutomatically
+field reference --fieldName userEntry --type ~.domain.User --notNull
+field reference --fieldName roleEntry --type ~.domain.Role --notNull
+finder add findUsersByEmailAddress --class ~.domain.User
+finder add findUsersByActivationKeyAndEmailAddress --class ~.domain.User
+finder add findUserRolesByUserEntry --class ~.domain.UserRole
+web mvc scaffold --class ~.web.UserController --backingType ~.domain.User
+web mvc scaffold --class ~.web.RoleController --backingType ~.domain.Role
+web mvc scaffold --class ~.web.UserRoleController --backingType ~.domain.UserRole
+security setup
+email sender setup --hostServer smtp.gmail.com --port 587 --protocol SMTP --username morodogtp@gmail.com --password tinchomorodog
+email template setup --from morodogtp@gmail.com --subject "Password Recovery"
+entity jpa --class ~.domain.User --testAutomatically --permitReservedWords
+field string --fieldName firstName --sizeMin 1 --notNull
+field string --fieldName lastName --sizeMin 1 --notNull
+field string --fieldName emailAddress --sizeMin 1 --notNull --unique
+field string --fieldName password --sizeMin 1 --notNull
+field date --fieldName activationDate --type java.util.Date 
+field string --fieldName activationKey 
+field boolean --fieldName enabled 
+field boolean --fieldName locked 
+entity jpa --class ~.domain.Role --testAutomatically --permitReservedWords
+field string --fieldName roleName --sizeMin 1 --notNull --unique
+field string --fieldName roleDescription --sizeMin --sizeMax 200 --notNull
+entity jpa --class ~.domain.UserRole --testAutomatically
+field reference --fieldName userEntry --type ~.domain.User --notNull
+field reference --fieldName roleEntry --type ~.domain.Role --notNull
+finder add findUsersByEmailAddress --class ~.domain.User
+finder add findUsersByActivationKeyAndEmailAddress --class ~.domain.User
+finder add findUserRolesByUserEntry --class ~.domain.UserRole
+web mvc scaffold --class ~.web.UserController --backingType ~.domain.User
+web mvc scaffold --class ~.web.RoleController --backingType ~.domain.Role
+web mvc scaffold --class ~.web.UserRoleController --backingType ~.domain.UserRole
+email sender setup --hostServer smtp.gmail.com --port 587 --protocol SMTP --username rohitsghatoltest@gmail.com --password password4me
+email template setup --from rohitsghatoltest@gmail.com --subject "Password Recovery"
+typicalsecurity setup
+// [failed] focus --class ~.domain.UserModel
+finder add findUserModelsByEmailAddress
+// [failed] finder list
+focus --class ~.domain.User
+finder list
+finder list --depth 2
+finder add findUsersByEmailAddress
+finder add findUsersByActivationKeyAndEmailAddress
+focus --class ~.domain.UserRole
+finder add findUserRolesByUserEntry
+focus --class ~.domain.Usuario
+field reference --fieldName usuario --type ~.domain.User --cardinality ONE_TO_ONE 
+focus --class ~.domain.User
+field reference --fieldName usuario --type ~.domain.Usuario --cardinality ONE_TO_ONE
+web mvc all --package ~.web
+web mvc bootstrap update
+web mvc jquery all
+focus --class ~.domain.Role
+finder add findRolesByRoleNameEquals
+service all --interfacePackage ~.service
+// Spring Roo 1.3.0.RELEASE [rev 4877cfb] log closed at 2015-02-12 00:14:14

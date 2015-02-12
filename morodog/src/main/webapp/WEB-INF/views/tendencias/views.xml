@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="tendencias/list">
+        <put-attribute name="body" value="/WEB-INF/views/tendencias/list.jspx"/>
+    </definition>
+<definition extends="default" name="tendencias/show">
+        <put-attribute name="body" value="/WEB-INF/views/tendencias/show.jspx"/>
+    </definition>
+<definition extends="default" name="tendencias/create">
+        <put-attribute name="body" value="/WEB-INF/views/tendencias/create.jspx"/>
+    </definition>
+<definition extends="default" name="tendencias/update">
+        <put-attribute name="body" value="/WEB-INF/views/tendencias/update.jspx"/>
+    </definition>
+<definition extends="default" name="tendencias/findTendenciasByNombreEquals">
+        <put-attribute name="body" value="/WEB-INF/views/tendencias/findTendenciasByNombreEquals.jspx"/>
+    </definition>
+<definition extends="default" name="tendencias/findTendenciasByPublicacion">
+        <put-attribute name="body" value="/WEB-INF/views/tendencias/findTendenciasByPublicacion.jspx"/>
+    </definition>
+</tiles-definitions>

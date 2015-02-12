@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/jquery/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/jquery/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:find finderName="ByFechaGreaterThan" id="ff_ar_edu_um_programacion2_morodog_domain_Publicacion" path="/publicacions" z="4/wacFoks01Lxygd6NVPVpj9DKw=">
+        <field:datetime dateTimePattern="${publicacion_fecha_date_format}" disableFormBinding="true" field="fecha" id="f_ar_edu_um_programacion2_morodog_domain_Publicacion_fecha" required="true" z="Of8RiohWGqdsfzJ6I7BlZgt0rv8="/>
+    </form:find>
+</div>

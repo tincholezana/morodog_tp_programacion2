@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/jquery/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/jquery/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ar_edu_um_programacion2_morodog_domain_Link" object="${link}" path="/links" z="yeSGY6NvNT/URVh+C0M5eptXnHM=">
+        <field:display field="nombre" id="s_ar_edu_um_programacion2_morodog_domain_Link_nombre" object="${link}" z="xRRzqRqrBWh2UjCrsf9apG6A0S4="/>
+        <field:display field="url" id="s_ar_edu_um_programacion2_morodog_domain_Link_url" object="${link}" z="t5T3k4G+VHBINiKJa8+AxyBzeT0="/>
+        <field:display field="publicacion" id="s_ar_edu_um_programacion2_morodog_domain_Link_publicacion" object="${link}" z="IibPK56aUAjs4cMojeFE89TXqb0="/>
+    </page:show>
+</div>

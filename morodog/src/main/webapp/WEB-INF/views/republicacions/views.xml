@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="republicacions/list">
+        <put-attribute name="body" value="/WEB-INF/views/republicacions/list.jspx"/>
+    </definition>
+<definition extends="default" name="republicacions/show">
+        <put-attribute name="body" value="/WEB-INF/views/republicacions/show.jspx"/>
+    </definition>
+<definition extends="default" name="republicacions/create">
+        <put-attribute name="body" value="/WEB-INF/views/republicacions/create.jspx"/>
+    </definition>
+<definition extends="default" name="republicacions/update">
+        <put-attribute name="body" value="/WEB-INF/views/republicacions/update.jspx"/>
+    </definition>
+<definition extends="default" name="republicacions/findRePublicacionsByFechaBetween">
+        <put-attribute name="body" value="/WEB-INF/views/republicacions/findRePublicacionsByFechaBetween.jspx"/>
+    </definition>
+<definition extends="default" name="republicacions/findRePublicacionsByIdUsuario">
+        <put-attribute name="body" value="/WEB-INF/views/republicacions/findRePublicacionsByIdUsuario.jspx"/>
+    </definition>
+<definition extends="default" name="republicacions/findRePublicacionsByPublicacion">
+        <put-attribute name="body" value="/WEB-INF/views/republicacions/findRePublicacionsByPublicacion.jspx"/>
+    </definition>
+</tiles-definitions>

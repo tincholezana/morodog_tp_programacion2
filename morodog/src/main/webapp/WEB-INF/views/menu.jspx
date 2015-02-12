@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_configuracion" z="Ocr0mjFEPTUxPCBdasw5CnezQHk=">
+            <menu:item id="i_configuracion_new" messageCode="global_menu_new" url="/configuracions?form" z="ub7ZReiU5j/GDKreJWShsy9YRFw="/>
+            <menu:item id="i_configuracion_list" messageCode="global_menu_list" url="/configuracions?page=1&amp;size=${empty param.size ? 10 : param.size}" z="DNpqHgH3ndQAwVtsjfy3jEhqqjc="/>
+            <menu:item id="fi_configuracion_ndiasemail" messageCode="global_menu_find" url="/configuracions?find=ByNDiasEmail&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="3O6PJR1a9db4ttQhbFMoRm2lTlc="/>
+            <menu:item id="fi_configuracion_ndiastendencia" messageCode="global_menu_find" url="/configuracions?find=ByNDiasTendencia&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="Do1+UjhXE0jgJhr/8z/GvxtD+Bk="/>
+        </menu:category>
+        <menu:category id="c_mensajeprivado" z="hFLzpT38Eh1g/y371CDokmA/dEY=">
+            <menu:item id="i_mensajeprivado_new" messageCode="global_menu_new" url="/mensajeprivadoes?form" z="J1LBW1GnzHK6x/8Aj/ro7oEcbmo="/>
+            <menu:item id="i_mensajeprivado_list" messageCode="global_menu_list" url="/mensajeprivadoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="EbYzIEN6gZBDcTPMrKTffiDSS1Y="/>
+            <menu:item id="fi_mensajeprivado_idusuarioemisor" messageCode="global_menu_find" url="/mensajeprivadoes?find=ByIdUsuarioEmisor&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="95VbW+8Bz4gM2//Ji31toGXX4jY="/>
+            <menu:item id="fi_mensajeprivado_idusuarioreceptorequals" messageCode="global_menu_find" url="/mensajeprivadoes?find=ByIdUsuarioReceptorEquals&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="D11fQE8VVDw68mzy/g5NOH3b/1Y="/>
+        </menu:category>
+        <menu:category id="c_usuario" z="g6oG0656PcsmmvUYeBtpgiQROck=">
+            <menu:item id="i_usuario_new" messageCode="global_menu_new" url="/usuarios?form" z="RG1gCsiZQjg1HLDzXbHKht6yDkw="/>
+            <menu:item id="i_usuario_list" messageCode="global_menu_list" url="/usuarios?page=1&amp;size=${empty param.size ? 10 : param.size}" z="P7ZIPrcTTBR41JYD0QldbYgsZrM="/>
+            <menu:item id="fi_usuario_activonot" messageCode="global_menu_find" url="/usuarios?find=ByActivoNot&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="RkTIhLsDEF9F9RqaYNzM5bIGL6E="/>
+            <menu:item id="fi_usuario_apellidolike" messageCode="global_menu_find" url="/usuarios?find=ByApellidoLike&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="pl7yEKoNOuo5sUmqpzbgBg9tKN4="/>
+            <menu:item id="fi_usuario_emaillike" messageCode="global_menu_find" url="/usuarios?find=ByEMailLike&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="5TchakTqIMoVEwkR4YmzuwhSJs4="/>
+            <menu:item id="fi_usuario_nombreusuarioequals" messageCode="global_menu_find" url="/usuarios?find=ByNombreUsuarioEquals&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="cAs1p++GGdsxBrDHjd6LaF1m8xI="/>
+            <menu:item id="fi_usuario_passwordequals" messageCode="global_menu_find" url="/usuarios?find=ByPasswordEquals&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="We/1v3lhm6OPvxLEs+qmM1QIqYQ="/>
+        </menu:category>
+        <menu:category id="c_republicacion" z="ApbVfNxvTvCB/npArIIu1w/+g4Y=">
+            <menu:item id="i_republicacion_new" messageCode="global_menu_new" url="/republicacions?form" z="Xcrs+CwgIABZ/Mf2b/n0HI/Ui8A="/>
+            <menu:item id="i_republicacion_list" messageCode="global_menu_list" url="/republicacions?page=1&amp;size=${empty param.size ? 10 : param.size}" z="QMSNucstKVuRznAz9iSxEdukrSw="/>
+            <menu:item id="fi_republicacion_fechabetween" messageCode="global_menu_find" url="/republicacions?find=ByFechaBetween&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="U1fXO3xHdhdbFI0iQYClC6SdP+E="/>
+            <menu:item id="fi_republicacion_idusuario" messageCode="global_menu_find" url="/republicacions?find=ByIdUsuario&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="hc0yi86WLzNzzvtAaf5IIScBOa4="/>
+            <menu:item id="fi_republicacion_publicacion" messageCode="global_menu_find" url="/republicacions?find=ByPublicacion&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="X5uDjnT5+WdJqf3wSkdUX2Qin9Y="/>
+        </menu:category>
+        <menu:category id="c_link" z="SPJgWbk3mCBigtdIiyM6NrKnDYo=">
+            <menu:item id="i_link_new" messageCode="global_menu_new" url="/links?form" z="n7jlbYMNhqR/1Kw9hMLy69e3jqo="/>
+            <menu:item id="i_link_list" messageCode="global_menu_list" url="/links?page=1&amp;size=${empty param.size ? 10 : param.size}" z="wY6kp12QvbbSwuPbsra/KIpzZU0="/>
+            <menu:item id="fi_link_nombreequals" messageCode="global_menu_find" url="/links?find=ByNombreEquals&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="I6S3vOdgOYXdOGSRcOaUl1B5POo="/>
+            <menu:item id="fi_link_publicacion" messageCode="global_menu_find" url="/links?find=ByPublicacion&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="aQcT+TJg5EgtsSpZ7a/L9On7V50="/>
+            <menu:item id="fi_link_urlequals" messageCode="global_menu_find" url="/links?find=ByUrlEquals&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="0gn4pykgq2si8GbkI3aG7bz0BA4="/>
+        </menu:category>
+        <menu:category id="c_vinculo" z="b0QkoCjKEL/2FPZJgdB6qYtwmTU=">
+            <menu:item id="i_vinculo_new" messageCode="global_menu_new" url="/vinculoes?form" z="VJs0EMzTWFSb4NfdD5yQTC+d5YM="/>
+            <menu:item id="i_vinculo_list" messageCode="global_menu_list" url="/vinculoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="p2trHjdDInhN5Fgr6VUbCddVhYA="/>
+        </menu:category>
+        <menu:category id="c_publicacion" z="qAqJ7U0pUSMU/iq1gPpJci9TeKQ=">
+            <menu:item id="i_publicacion_new" messageCode="global_menu_new" url="/publicacions?form" z="f5/4xuDvCPHh8hX1VW2Renec/9A="/>
+            <menu:item id="i_publicacion_list" messageCode="global_menu_list" url="/publicacions?page=1&amp;size=${empty param.size ? 10 : param.size}" z="d1LOYL+nY7tilQHeUujz+Th2DbE="/>
+            <menu:item id="fi_publicacion_fechabetween" messageCode="global_menu_find" url="/publicacions?find=ByFechaBetween&amp;form" z="uyQHyVLVFGnsqXIukZJIWRSXRrk="/>
+            <menu:item id="fi_publicacion_fechagreaterthan" messageCode="global_menu_find" url="/publicacions?find=ByFechaGreaterThan&amp;form" z="Wm34bSHndSXBny1Tpgsn3G5j6Xk="/>
+            <menu:item id="fi_publicacion_fechalessthan" messageCode="global_menu_find" url="/publicacions?find=ByFechaLessThan&amp;form" z="FAAllJFGbUNB9mQav0taSmgWgTg="/>
+            <menu:item id="fi_publicacion_textolike" messageCode="global_menu_find" url="/publicacions?find=ByTextoLike&amp;form" z="sdij/R2YQl4JybhaGdaKGXYdU74="/>
+            <menu:item id="fi_publicacion_usuario" messageCode="global_menu_find" url="/publicacions?find=ByUsuario&amp;form" z="6fl6meaPVnTm4s1CaAFip+h3jBg="/>
+        </menu:category>
+        <menu:category id="c_tendencia" z="Zsi0pVMdO199mNzHY94IrgLKKVU=">
+            <menu:item id="i_tendencia_new" messageCode="global_menu_new" url="/tendencias?form" z="NdNKy3xs0fweDEg06Y9XmysMPQs="/>
+            <menu:item id="i_tendencia_list" messageCode="global_menu_list" url="/tendencias?page=1&amp;size=${empty param.size ? 10 : param.size}" z="4PdSfxTLlG49IPeq7/JQHwYrZxU="/>
+            <menu:item id="fi_tendencia_nombreequals" messageCode="global_menu_find" url="/tendencias?find=ByNombreEquals&amp;form" z="hQjbNyhrh+BQJPVI0yGX76h6+0c="/>
+            <menu:item id="fi_tendencia_publicacion" messageCode="global_menu_find" url="/tendencias?find=ByPublicacion&amp;form" z="j3+2LQyXS3PTplcvhR2CN11S7i0="/>
+        </menu:category>
+        <menu:category id="c_user" z="uoTSf/uIZ821ZppidzS9aO776yk=">
+            <menu:item id="i_user_new" messageCode="global_menu_new" url="/users?form" z="Zv1m8u2rG+JFKcvJ+AHVVK0ey24="/>
+            <menu:item id="i_user_list" messageCode="global_menu_list" url="/users?page=1&amp;size=${empty param.size ? 10 : param.size}" z="4MY4uybxa60Q1G2rlI5bOwg+sm0="/>
+        </menu:category>
+        <menu:category id="c_role" z="LPygIx2EuEArCzqsfpQQev0lHyc=">
+            <menu:item id="i_role_new" messageCode="global_menu_new" url="/roles?form" z="WNB2HvnzvtbOA3r7qL1gqrUOq8g="/>
+            <menu:item id="i_role_list" messageCode="global_menu_list" url="/roles?page=1&amp;size=${empty param.size ? 10 : param.size}" z="DVFtqj4xcHbEiJh6bgI7Tyre3ec="/>
+        </menu:category>
+        <menu:category id="c_userrole" z="C4C1ZBdes4PUIjEM3Ajwwhn1EwA=">
+            <menu:item id="i_userrole_new" messageCode="global_menu_new" url="/userroles?form" z="qYpuuJuPupoYjD8LM0ISnxylj4o="/>
+            <menu:item id="i_userrole_list" messageCode="global_menu_list" url="/userroles?page=1&amp;size=${empty param.size ? 10 : param.size}" z="fTjcT4INZTypLgu+ZHmwzE55ORs="/>
+        </menu:category>
+    </menu:menu>
+</div>

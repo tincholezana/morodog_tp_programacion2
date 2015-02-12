@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="publicacions/list">
+        <put-attribute name="body" value="/WEB-INF/views/publicacions/list.jspx"/>
+    </definition>
+<definition extends="default" name="publicacions/show">
+        <put-attribute name="body" value="/WEB-INF/views/publicacions/show.jspx"/>
+    </definition>
+<definition extends="default" name="publicacions/create">
+        <put-attribute name="body" value="/WEB-INF/views/publicacions/create.jspx"/>
+    </definition>
+<definition extends="default" name="publicacions/update">
+        <put-attribute name="body" value="/WEB-INF/views/publicacions/update.jspx"/>
+    </definition>
+<definition extends="default" name="publicacions/findPublicacionsByFechaBetween">
+        <put-attribute name="body" value="/WEB-INF/views/publicacions/findPublicacionsByFechaBetween.jspx"/>
+    </definition>
+<definition extends="default" name="publicacions/findPublicacionsByFechaGreaterThan">
+        <put-attribute name="body" value="/WEB-INF/views/publicacions/findPublicacionsByFechaGreaterThan.jspx"/>
+    </definition>
+<definition extends="default" name="publicacions/findPublicacionsByFechaLessThan">
+        <put-attribute name="body" value="/WEB-INF/views/publicacions/findPublicacionsByFechaLessThan.jspx"/>
+    </definition>
+<definition extends="default" name="publicacions/findPublicacionsByTextoLike">
+        <put-attribute name="body" value="/WEB-INF/views/publicacions/findPublicacionsByTextoLike.jspx"/>
+    </definition>
+<definition extends="default" name="publicacions/findPublicacionsByUsuario">
+        <put-attribute name="body" value="/WEB-INF/views/publicacions/findPublicacionsByUsuario.jspx"/>
+    </definition>
+</tiles-definitions>
